@@ -1,0 +1,104 @@
+% Template:     Informe LaTeX
+% Documento:    Archivo principal
+% Versión:      8.2.7 (21/08/2023)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        pablo@ppizarror.com
+%
+% Manual template: [https://latex.ppizarror.com/informe]
+% Licencia MIT:    [https://opensource.org/licenses/MIT]
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[
+	spanish, % Idioma: spanish, english, etc.
+	letterpaper, oneside
+]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\documenttitle {Bases de Datos: Proyecto Grupal}
+\def\documentsubtitle {}
+\def\documentsubject {Análisis de fluctuación de reviews por rango etario en libros}
+
+\def\documentauthor {}
+\def\coursename {Bases de Datos}
+\def\coursecode {CC3201-1}
+
+\def\universityname {Universidad de Chile}
+\def\universityfaculty {Facultad de Ciencias Físicas y Matemáticas}
+\def\universitydepartment {Departamento de Ciencias de la Computación}
+\def\universitydepartmentimage {departamentos/dcc}
+\def\universitydepartmentimagecfg {height=1.57cm}
+\def\universitylocation {Santiago de Chile}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\authortable {
+\begin{tabular}{ll}
+	Integrantes:
+	& \begin{tabular}[t]{@{}l@{}}
+		Mario Benavente \\ 
+		Pablo Cañas \\
+        Gabriel Gallardo \\
+        Dary Santelices \\
+	\end{tabular} \\
+    \quad \\
+	Profesor:
+	& \begin{tabular}[t]{@{}l@{}}
+		Matías Toro I.
+	\end{tabular} \\
+    \quad \\
+	Auxiliares:
+	& \begin{tabular}[t]{@{}l@{}}
+	    Claudio Gutiérrez \\
+        Cristian Salazar De la Fuente \\
+        Daniel Radrigán \\
+        Fran Antonie Zautzik Rojas \\
+        Scarlett Plaza
+	\end{tabular} \\
+    \quad \\
+    Ayudantes:
+    & \begin{tabular}[t]{@{}l@{}}
+	    Daniela Assael R. \\
+        Diego Reyes G. \\
+        Joel Riquelme P. \\
+        Kathleen Kohler Á. \\
+        Nahuel Gómez Raguileo \\
+        Natalia Quinteros Retamal \\
+        Paula Ovalle M. \\
+        Sebastián Contreras P.
+	\end{tabular} \\
+	& \\
+	\multicolumn{2}{l}{Fecha de entrega: 2 de Octubre de 2023} \\
+	\multicolumn{2}{l}{\universitylocation}
+\end{tabular}
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+
+% PORTADA
+\templatePortrait
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% TABLA DE CONTENIDOS - ÍNDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+\input{Hito0}
+\newpage
+\input{ModeloER}
+\newpage
+\input{ModeloRelacional}
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+
+% FIN DEL DOCUMENTO
+\end{document}

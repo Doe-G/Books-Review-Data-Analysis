@@ -1,0 +1,27 @@
+\section{Modelo Relacional}
+
+\begin{flushleft}
+
+{\color{ForestGreen} Libro}({\color{RoyalBlue}\underline{ISBN}: }{\color{Mahogany}String}, {\color{RoyalBlue}titulo: }{\color{Mahogany}String}, {\color{RoyalBlue}genero: }{\color{Mahogany}String}, {\color{RoyalBlue}anho: }{\color{Mahogany}Int}) \\
+\quad
+
+{\color{ForestGreen} Editorial}({\color{RoyalBlue}\underline{nombre}: }{\color{Mahogany}String}) \\
+\quad
+
+{\color{ForestGreen} Autor}({\color{RoyalBlue}\underline{nombre}: }{\color{Mahogany}String}) \\
+\quad
+
+{\color{ForestGreen} Usuario}({\color{RoyalBlue}\underline{id}: }{\color{Mahogany}Int}, {\color{RoyalBlue}residencia: }{\color{Mahogany}String}, {\color{RoyalBlue}edad: }{\color{Mahogany}Int}) \\
+\quad
+
+{\color{ForestGreen} Review}({\color{RoyalBlue}\underline{L\textbf{\_}ISBN}: }{\color{Mahogany}String}, {\color{RoyalBlue}\underline{U\textbf{\_}id}: }{\color{Mahogany}String}, {\color{RoyalBlue}\underline{rating}: }{\color{Mahogany}Int}) \\
+\hspace{1cm} {\color{RoyalBlue}L\textbf{\_}ISBN} REF {\color{ForestGreen} Libro}({\color{RoyalBlue}ISBN}) \\
+\hspace{1cm} {\color{RoyalBlue}U\textbf{\_}id} REF {\color{ForestGreen} Usuario}({\color{RoyalBlue}id}) \\
+\quad
+
+{\color{ForestGreen} Escribe}({\color{RoyalBlue}\underline{A\textbf{\_}nombre}: }{\color{Mahogany}String}, {\color{RoyalBlue}\underline{L\textbf{\_}ISBN}: }{\color{Mahogany}String}) \\
+\hspace{1cm} {\color{RoyalBlue}A\textbf{\_}nombre} REF {\color{ForestGreen} Autor}({\color{RoyalBlue}nombre}) \\
+\hspace{1cm} {\color{RoyalBlue}L\textbf{\_}ISBN} REF {\color{ForestGreen} Libro}({\color{RoyalBlue}ISBN}) \\
+\quad
+
+\end{flushleft}
